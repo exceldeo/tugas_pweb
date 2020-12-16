@@ -9,7 +9,7 @@ def look_for_face(uri):
     print('true')
     img = cv2.imread(uri)
     for face_points in face_locations:
-      img = cv2.rectangle(img, (face_points[1], face_points[0]), (face_points[3], face_points[2]), (255, 0, 0), 1)
+      img = cv2.rectangle(img, (face_points[1], face_points[0]), (face_points[3], face_points[2]), (255, 0, 0), 3)
     cv2.imwrite(uri, img)
   else:
     print('false')
