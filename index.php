@@ -96,7 +96,7 @@ $data= query("SELECT * FROM user");
         <h1>Tugas detect face in image</h1>
         <form action="upload.php" method="post" enctype="multipart/form-data" class="my-5">
           Select image to check:
-          <input type="file" name="fileToUpload" id="fileToUpload" accept="image/*" required> <br>
+          <input class="form-control-file" type="file" name="fileToUpload" id="fileToUpload" accept="image/*" required> <br>
           <input type="submit" value="Upload Image" name="submit">
         </form>
     </div>
